@@ -1,0 +1,27 @@
+openapi: 3.0.3
+info:
+  title: Catalog API
+  version: 0.1.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /api/catalog/items/{id}:
+    get:
+      operationId: getCatalogItem
+      parameters:
+        - {name: id, in: path, required: true, schema: {type: string}}
+      responses:
+        '200':
+          description: Catalog item
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/CatalogItem'}
+        '404': {description: Item not found}
+components:
+  schemas:
+    CatalogItem:
+      type: object
+      required: [id, name]
+      properties:
+        id: {type: string}
+        name: {type: string}
