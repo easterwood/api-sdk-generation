@@ -104,7 +104,6 @@
                             <output>${project.basedir}</output>
                             <!-- will be cleaned with maven clean -->
                             <cleanupOutput>false</cleanupOutput>
-                            <minimalUpdate>true</minimalUpdate>
                             <addCompileSourceRoot>false</addCompileSourceRoot>
 
                             <apiPackage>com.example.catalog.api</apiPackage>
@@ -118,6 +117,7 @@
                                 <dateLibrary>java8</dateLibrary>
                                 <annotationLibrary>none</annotationLibrary>
                                 <sourceFolder>src/main/java</sourceFolder>
+                                <hideGenerationTimestamp>true</hideGenerationTimestamp>
                             </configOptions>
                             <generateSupportingFiles>false</generateSupportingFiles>
                             <generateApiTests>false</generateApiTests>
