@@ -13,7 +13,7 @@
         <spring-boot.version>3.5.6</spring-boot.version>
         <java.version>21</java.version>
     </properties>
-    <artifactId>catalog-consumer</artifactId>
+    <artifactId>catalog-consumer-sb3</artifactId>
     <dependencyManagement>
         <dependencies>
             <dependency>
